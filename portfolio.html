@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-Mr.sadik</title>
+    <link rel="icon" type="image/png" href="icon.ico">
+
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2J57TBYPDB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2J57TBYPDB');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .resume {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            min-height: 297mm;
+        }
+        
+        .sidebar {
+            width: 35%;
+            background-color: #f8f9fa;
+            padding: 40px 30px;
+            border-right: 1px solid #e9ecef;
+        }
+        
+        .main-content {
+            width: 65%;
+            padding: 40px 30px;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: .6rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+        
+        .divider {
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .contact-item::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+            background: #7f8c8d;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+        .skills-list, .languages-list {
+            list-style: none;
+        }
+        
+        .skills-list li, .languages-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .skills-list li::before, .languages-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .timeline {
+            position: relative;
+            margin-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e3f2fd;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .dates {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .job-description {
+            list-style: none;
+        }
+        
+        .job-description li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        
+        .job-description li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            background: #7f8c8d;
+            border-radius: 50%;
+        }
+        
+        .profile-text {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume {
+                box-shadow: none;
+                max-width: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="sidebar">
+            <div class="section-title">Contact</div>
+            <div class="contact-item">8591070717</div>
+            <div class="contact-item">sadikul2916@gmail.com</div>
+            <div class="contact-item">wadala,antophill cgs sector 3,mumbai-400037</div>
+            <div class="contact-item">github.com/sadik-del</div>
+            
+            <div class="section-title" style="margin-top: 40px;">Skills</div>
+           <ul class="skills-list">
+    <li>C Programming</li>
+    <li>C++ Programming</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>SQL & PL/SQL</li>
+    <li>Object-Oriented Programming</li>
+    <li>Git & GitHub</li>
+</ul>
+            
+            
+            
+            <div class="section-title" style="margin-top: 40px;">Languages</div>
+            <ul class="languages-list">
+		 <li>Hindi (Fluent)</li>
+                <li>English (conversational)</li>
+            </ul>
+            
+        </div>
+        
+        <div class="main-content">
+            <h1 class="name">Sadikul Azizul Shaikh </h1>
+            <h2 class="title">Motivated Undergraduate BSC It student. Passionate about software development, problem solving, and building practical projects. Eager to apply technical skills in real-world environments through internships and collaborative projects while continuously learning new technologies</h2>
+            <div class="divider"></div>
+            
+            
+            
+<div class="section-title">Education</div>
+
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="job-title">Bachelor of Science in Information Technology</div>
+        <div class="company">Guru Nanak Khalsa College</div>
+        <div class="dates">2026 - Present</div>
+    </div>
+</div>
+
+
+<div class="section-title">Projects</div>
+
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="job-title">Android WhatsApp Clone</div>
+        <ul class="job-description">
+            <li>Developed a Flutter-based messaging application.</li>
+            <li>Implemented chat UI and navigation features.</li>
+            <li>Created responsive mobile layouts.</li>
+        </ul>
+    </div>
+
+    <div class="timeline-item">
+        <div class="job-title">Personal Portfolio Website</div>
+        <ul class="job-description">
+            <li>Designed and developed a responsive portfolio.</li>
+            <li>Used HTML, CSS and JavaScript.</li>
+            <li>Integrated Google Analytics.</li>
+        </ul>
+    </div>
+</div>
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</body>
+</html>
